@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "ContrailOne-Regular";
+    src: url("../fonts/ContrailOne-Regular.woff") format("woff"),
+         url("../fonts/ContrailOne-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SourceCodePro-SemiboldIt";  
+    src: url("../fonts/SourceCodePro-SemiBoldItalic.woff") format("woff"),
+         url("../fonts/SourceCodePro-SemiBoldItalic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Poppins-Medium";  
+    src: url("../fonts/Poppins-Medium.woff") format("woff"),
+         url("../fonts/Poppins-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SquadaOne-Regular";
+    src: url("../fonts/SquadaOne-Regular.woff") format("woff"),
+         url("../fonts/SquadaOne-Regular.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Merriweather-BlackItalic";
+    src: url("../fonts/Merriweather-BlackItalic.woff") format("woff"),
+         url("../fonts/Merriweather-BlackItalic.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ZillaSlab-Medium";
+    src: url("../fonts/ZillaSlab-Medium.woff") format("woff"),
+         url("../fonts/ZillaSlab-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Tomorrow-Medium";
+    src: url("../fonts/Tomorrow-Medium.woff") format("woff"),
+         url("../fonts/Tomorrow-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Commissioner-Medium";
+    src: url("../fonts/Commissioner-Medium.woff") format("woff"),
+         url("../fonts/Commissioner-Medium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "BreeSerif-Regular";
+    src: url("../fonts/BreeSerif-Regular.woff") format('woff'),
+         url("../fonts/BreeSerif-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}

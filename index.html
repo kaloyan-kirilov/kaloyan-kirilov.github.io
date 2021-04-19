@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/fav-icon.svg">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Kaloyan Kirilov</title>
+</head>
+<body>
+    <div id="container">
+        <nav id="nav-bar">
+            <div id="code-name">
+                <span id="code">
+                    <span class="bracket">&lt;</span> <span id="slash">/</span> <span class="bracket">&gt;</span>
+                </span>
+                <span id="name">Kaloyan Kirilov<span id="dot">.</span></span>
+            </div>
+            <ul class="nav-menu">
+                <li id="about-btn" class="nav-btn">About Me</li>
+                <li id="projects-btn" class="nav-btn">Projects</li>
+                <li id="contact-btn" class="nav-btn">Contact</li>
+            </ul>
+            <div class="burger-menu">
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+                <div class="burger-line"></div>
+            </div>
+        </nav>
+        <main id="main-section">
+            <div id="title-card">
+                <div id="front-end">FRONT-END</div>
+                <div id="web-dev"><span id="hide-web">Web </span>Development</div>
+                <div id="sub-text">
+                    <span class="arrows">>></span>HTML&nbsp;
+                    <span class="arrows">>></span>CSS&nbsp;
+                    <span class="arrows">>></span>JavaScript & beyond...
+                </div>
+            </div>
+            <div id="links">
+                <a href="https://github.com/" target="_blank"><div id="git-hub" class="link-button"></div></a>
+                <a href="https://www.linkedin.com/" target="_blank"><div id="linked-in" class="link-button"></div></a>
+                <a href="https://twitter.com/" target="_blank"><div id="twitter" class="link-button"></div></a>
+            </div>
+            <div id="about-modal" class="modal">
+                <div class="modal-body">
+                    <div class="header">About Me</div>
+                    <div id="about-close" class="close-btn">&times;</div>
+                    <div id="border-line"></div>
+                    <p class="modal-text">&nbsp;Hello there. My name is Kaloyan Kirilov and I am quite passionate about building things for the web. I'm usually an artist and I have a degree and main interest in art, but I'm also very curious about computers and how they work. Generally I like looking at things analytically and figuring out what makes them tick. The dynamic development of the web technologies presents me with interesting challenges and a great learning experience. I really enjoy using my creativity in a bit more technical manner by developing stuff for the internet.</p>
+                </div>
+            </div>
+            <div id="projects-modal" class="modal">
+                <div class="modal-body">
+                    <div class="header">Projects</div>
+                    <div id="projects-close" class="close-btn">&times;</div>
+                    <div id="border-line"></div>
+                    <div id="projects">
+                        <div class="project-container">
+                            <a href="https://www.kartoonfool.com/" target="_blank"><div class="project-thumbnail"><div id="project-one"></div></div></a>
+                            <a href="https://github.com/kaloyan-kirilov/kartoon-fool" target="_blank"><div id="code-one" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div></a>
+                        </div>
+                        <div class="project-container">
+                            <div class="project-thumbnail"></div>
+                            <div id="code-two" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div>
+                        </div>
+                        <div class="project-container">
+                            <div class="project-thumbnail"></div>
+                            <div id="code-three" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div>
+                        </div>
+
+                        <div class="project-container">
+                            <div class="project-thumbnail"></div>
+                            <div id="code-four" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact-modal" class="modal">
+                <div class="modal-body">
+                    <div class="header">Contact Me</div>
+                    <div id="contact-close" class="close-btn">&times;</div>
+                    <div id="border-line"></div>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name :</label>
+                            <input type="text" name="name" id="input-name" placeholder="Enter your name..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email :</label>
+                            <input type="email" name="email" id="input-email" placeholder="Enter your email address..." required>
+                        </div>
+                        <div>
+                            <label for="message">Message :</label>
+                            <textarea name="message" id="input-message" rows="9" placeholder="Enter your message..." required></textarea>
+                        </div>
+                        <div id="button-section">
+                            <button type="submit" id="send-btn">Send</button>
+                            <div id="sent-alert"><img id="sent-tick" src="img/tick-icon.svg" alt="tick">MESSAGE SENT</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer id="footer">&copy; 2020-21 Kaloyan Kirilov</footer>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
