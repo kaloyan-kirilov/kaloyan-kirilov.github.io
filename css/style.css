@@ -517,7 +517,7 @@ textarea:focus::placeholder {
     }
 
     #nav-bar {
-        height: 65px;
+        height: 68px;
         font-size: 20px;
         border-bottom: 4px solid #9e2a2b;
     }
@@ -644,7 +644,7 @@ textarea:focus::placeholder {
     }
 
     #footer {
-        height: 55px;
+        height: 58px;
         border-top: 4px solid #ffffff;
         font-size: 16px;
         letter-spacing: 0.5px;
