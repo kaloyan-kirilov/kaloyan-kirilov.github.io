@@ -4,14 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    width: 100%;
-}
-
 #container {
-    height: 100%;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     background: url('../img/background-img.jpg') no-repeat center center / cover;
     overflow: hidden;
     position: relative;
@@ -960,7 +955,7 @@ textarea:focus::placeholder {
 
     #message-sent {
         height: 10vw;
-        font-size: 4.3vw;
+        font-size: 4.5vw;
     }
 
     #sent-icon {
