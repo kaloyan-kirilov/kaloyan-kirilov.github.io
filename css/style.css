@@ -697,6 +697,10 @@ textarea:focus::placeholder {
         border-radius: 1.25vw;
     }
 
+    .anchor {
+        background-size: 8vw;
+    }
+
     .modal-body {
         width: 87vw;
         border-radius: 2vw;
@@ -863,6 +867,10 @@ textarea:focus::placeholder {
         height: 20vw;
         background-size: 11vw 11vw;
         border-radius: 1.6vw;
+    }
+
+    .anchor {
+        background-size: 11vw;
     }
 
     .modal-body {
