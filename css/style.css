@@ -806,7 +806,7 @@ textarea:focus::placeholder {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 500px) and (orientation: portrait) {
     #nav-bar {
         height: 17.5vw;
         font-size: 4.5vw;
