@@ -11,24 +11,22 @@ html, body {
 
 #container {
     height: 100%;
-    min-height: 700px;
     width: 100%;
     background: url('../img/background-img.jpg') no-repeat center center / cover;
     overflow: hidden;
     position: relative;
 }
 
-
 /* ---------- NAVIGATION BAR ---------- */
 #nav-bar {
     width: 100%;
-    height: 85px;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     background-color: #181615;
-    font-size: 24px;
-    border-bottom: 5px solid #9e2a2b;
+    font-size: calc(2.1vh + 6px);
+    border-bottom: 0.7vh solid #9e2a2b;
     position: absolute;
     top: 0;
     z-index: 1;
@@ -68,11 +66,11 @@ html, body {
 }
 
 #about-btn, #projects-btn {
-    border-left: 3px solid #464544;
+    border-left: 0.4vh solid #464544;
 }
 
 #contact-btn, #projects-btn {
-    border-right: 3px solid #464544;
+    border-right: 0.4vh solid #464544;
 }
 
 .nav-btn {
@@ -111,7 +109,6 @@ html, body {
     transform: scaleY(1);
 }
 
-
 /* ---------- MAIN SECTION ---------- */
 #main-section {
     width: 100%;
@@ -125,65 +122,71 @@ html, body {
 }
 
 #title-card {
-    width: 750px;
-    height: 350px;
+    width: calc(59.5vh + 185px);
+    height: calc(25.5vh + 80px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    text-shadow: 5px 5px black;
+    text-shadow: 0.45vh 0.45vh black;
     background-color: rgba(24, 22, 21, 0.6);
-    border-radius: 20px;
+    border-radius: 1.5vh;
 }
 
 #front-end {   
     font-family: "SquadaOne-Regular";
-    font-size: 80px;
+    font-size: calc(6.5vh + 20px);
     color: #ffffff;
 }
 
 #web-dev {
     font-family: "Merriweather-BlackItalic";
-    font-size: 70px;
+    font-size: calc(5.55vh + 17px);
     color: #73d2de;
 }
 
 #sub-text {
     font-family: "ZillaSlab-Medium";
-    font-size: 27px;
-    letter-spacing: 1px;
+    font-size: calc(2vh + 7px);
+    letter-spacing: 0.15vh;
     color: #f0f3bd;
     text-shadow: none;
-    margin: 20px;
+    margin: 1.5vh;
 }
 
 .arrows {
     font-weight: bold;
     color: #e8a035;
-    padding-right: 6px;
+    padding-right: 0.7vh;
 }
 
 #links {
-    width: 380px;
+    width: calc(30vh + 85px);
     display: flex;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: calc(2vh + 8px);
 }
 
 .link-button {
-    width: 100px;
-    height: 100px;
+    width: calc(8.5vh + 20px);
+    height: calc(8.5vh + 20px);
     background-color: rgba(24, 22, 21, 0.9);
+    border-radius: 1vh;
+    cursor: pointer;
+}
+
+.anchor {
+    width: 100%;
+    height: 100%;
+    display: block;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 55px 55px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    background-size: calc(5vh + 10px);
+    transition: 0.2s ease-in-out;
 }
 
 #git-hub {
-    background-image: url('../img/logos/github-logo.svg'), url('../img/logos/github-logo-hover.svg');
+    background-image: url('../img/logos/github-logo.svg');
 }
 
 #git-hub:hover {
@@ -191,7 +194,7 @@ html, body {
 }
 
 #linked-in {
-    background-image: url('../img/logos/linkedin-logo.svg'), url('../img/logos/linkedin-logo-hover.svg');
+    background-image: url('../img/logos/linkedin-logo.svg');
 }
 
 #linked-in:hover {
@@ -199,13 +202,12 @@ html, body {
 }
 
 #twitter {
-    background-image: url('../img/logos/twitter-logo.svg'), url('../img/logos/twitter-logo-hover.svg');
+    background-image: url('../img/logos/twitter-logo.svg');
 }
 
 #twitter:hover {
     background-image: url('../img/logos/twitter-logo-hover.svg');
 }
-
 
 /* ---------- MODALS ---------- */
 .modal {
@@ -233,165 +235,253 @@ html, body {
 }
 
 .modal-body {
-    width: 610px;
+    width: calc(48.5vh + 150px);
     background-color: #fefefe;
     font-family: "Poppins-Medium";
-    border-radius: 15px;
-    padding: 35px;
+    border-radius: 1.5vh;
+    padding: calc(2.8vh + 7px);
     position: relative;
 }
 
 .header {
-    font-size: 24px;
+    font-size: calc(2.15vh + 6px);
     font-weight: bold;
 }
 
 .close-btn {
-    height: 34px;
-    width: 34px;
+    height: calc(2.9vh + 9px);
+    width: calc(2.9vh + 9px);
     display: flex;
     align-items: center;
     justify-content: center;
     color: #aaa;
     border-radius: 50%;
     background-color: #2a2827;
+    background-image: url('../img/close.png');
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 15px;
-    margin-top: 15px;
-    font-family: "Commissioner-Medium";
-    font-size: 30px;
-    padding-bottom: 7px;
+    margin-right: calc(1.2vh + 3px);
+    margin-top: calc(1.2vh + 3px);
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }
 
 .close-btn:hover {
-    color: #fae588;
+    background-image: url('../img/close-hover.png');
     background-color: #181615;
 }
 
-#border-line {
+.border-line {
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: red;
 }
 
 .modal-text {
-    font-size: 20px;
+    font-size: calc(1.75vh + 5.5px);
     text-align: justify;
-    padding-top: 15px;
+    padding-top: 1vh;
 }
 
-#projects {
-    width: 100%;
-    height: 550px;
+#projects-grid {
+    width: 95%;
+    height: calc(35vh + 110px);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 5%;
-    padding-top: 5%;
-    padding-bottom: 2%;
-    margin: auto;
+    gap: calc(1.5vh + 5px);
+    margin-top: calc(1.3vh + 3px);
+    margin-bottom: calc(1.3vh + 3px);
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .project-container {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
-.project-thumbnail {
+.thumbnail {
     width: 100%;
-    height: 80%;
-    border: 2px solid gray;
+    height: 77%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #aaa;
     border-radius: 3px;
     background-color: #dfdad2;
-    margin-bottom: 10px;
     cursor: pointer;
     overflow: hidden;
     transition: 0.2s ease-in-out;
+    position: absolute;
+    top: 0;
 }
 
-.project-thumbnail:hover {
-    border: 2px solid #2a2827;
+.thumbnail:hover {
+    border: 2px solid #181615;
 }
 
-#project-one {
+.project {
     width: 100%;
     height: 100%;
-    background-image: url('../img/thumbnails/kartoon-fool.png');
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
     transition: 0.2s ease-in-out;
 }
 
-#project-one:hover {
-    transform: scale(1.10);
+.project:hover {
+    transform: scale(1.1);
 }
 
-#project-two {
+.hover {
     width: 100%;
     height: 100%;
-    background-image: url('../img/thumbnails/kal-3000.png');
-    background-repeat: no-repeat;
-    background-position: center; 
-    background-size: cover;
+    background-color: rgba(24, 22, 21, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
     transition: 0.2s ease-in-out;
 }
 
-#project-two:hover {
-    transform: scale(1.10);
+.project:hover .hover {
+    opacity: 1;
+}
+
+.title {
+    width: 100%;
+    height: 23%;
+    background-color: #181615;
+    font-size: calc(1.8vh + 6px);
+    letter-spacing: 0.25px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 a {
     text-decoration: none;
 }
 
-.view-button {
-    width: 125px;
-    height: 16%;
+.view-code {
+    width: calc(11.5vh + 35px);
+    height: 19%;
     font-family: "Roboto Slab";
-    font-size: 18px;
-    letter-spacing: 0.5px;
+    font-size: calc(1.6vh + 4px);
+    letter-spacing: 0.2vh;
     color: #aaa;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 0.5vh;
     background-color: #2a2827;
     cursor: pointer;
     transition: 0.2s ease-in-out;
     margin: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0;
 }
 
-.view-button:hover {
+.view-code:hover {
     color: #fae588;
     background-color: #181615;
 }
 
+#page-nav {
+    --nav-size: calc(3.9vh + 9px);
+    width: 100%;
+    height: var(--nav-size);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: calc(1.3vh + 3px);
+}
+
+#prev {
+    width: var(--nav-size);
+    height: 100%;
+    background-image: url('../img/prev-button.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    background-color: #2a2827;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#prev:hover {
+    background-image: url('../img/prev-button-hover.png');
+    background-color: #181615;
+}
+
+#number {
+    width: var(--nav-size);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 0.5vh solid #2a2827;
+    border-radius: 50%;
+    color: #2a2827;
+    font-family: "Poppins-Medium";
+    font-size: calc(2vh + 5px);
+    font-weight: bold;
+}
+
+#next {
+    width: var(--nav-size);
+    height: 100%;
+    background-image: url('../img/next-button.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: contain;
+    background-color: #2a2827;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+#next:hover {
+    background-image: url('../img/next-button-hover.png');
+    background-color: #181615;
+}
+
+.inactive-btn {
+    opacity: 0.5;
+    pointer-events: none;
+}
 
 /* ---------- CONTACT FORM ---------- */
 #contact-form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 15px;
+    padding-top: 1vh;
 }
 
 label {
     display: block;
-    font-size: 20px;
+    font-size: calc(1.75vh + 5.5px);
 }
 
 .form-group {
-    margin-bottom: 10px;
+    margin-bottom: calc(0.5vh + 5px);
 }
 
 input,
 textarea {
     width: 100%;
-    padding: 10px;
+    font-size: calc(1.4vh + 4px);
+    padding: 1vh;
     background-color: #dfdad2;
     border: 1px solid gray;
 }
@@ -412,22 +502,24 @@ textarea:focus::placeholder {
 
 #button-section {
     width: 100%;
+    height: calc(4.1vh + 10px);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    margin-top: 10px;
+    margin-top: 1.5vh;
 }
 
 #send-btn {   
-    width: 120px;
-    height: 50px;
-    font-family: "Poppins-Medium";
-    font-size: 20px;
+    width: calc(10.5vh + 25px);
+    height: 100%;
+    font-family: "Roboto Slab";
+    font-size: calc(1.85vh + 5px);
+    letter-spacing: 0.15vh;
     border: 0;
     color: #aaa;
     background-color: #2a2827;
-    border-radius: 7px;
+    border-radius: 0.7vh;
     transition: 0.2s ease-in-out;
     outline: none;
 }
@@ -438,13 +530,13 @@ textarea:focus::placeholder {
     cursor: pointer;
 }
 
-#sent-alert {
-    height: 50px;
+#message-sent {
+    height: 100%;
     display: none;
     align-items: center;
     justify-content: center;
     font-family: "Tomorrow-Medium";
-    font-size: 16px;
+    font-size: calc(1.6vh + 4px);
     border: 0;
     color: #7dba3a;
     letter-spacing: 0.5px;
@@ -455,9 +547,9 @@ textarea:focus::placeholder {
     animation-delay: 3s;
 }
 
-#sent-tick {
-    width: 24px;
-    padding-right: 4px;
+#sent-icon {
+    width: calc(2.3vh + 7px);
+    padding-right: calc(0.2vh + 2px);
 }
 
 @keyframes message-sent {
@@ -465,36 +557,34 @@ textarea:focus::placeholder {
     to {opacity: 0;}
 }
 
-
 /* ---------- FOOTER ---------- */
 #footer {
     width: 100%;
-    height: 75px;
+    height: 9vh;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #181615;
-    border-top: 5px solid #ffffff;
+    border-top: 0.6vh solid #ffffff;
     color: #ccc5b9;
     font-family: "BreeSerif-Regular";
-    font-size: 19px;
-    letter-spacing: 1px;
+    font-size: calc(1.4vh + 7px);
+    letter-spacing: 0.15vh;
     position: absolute;
     bottom: 0;
-    padding-bottom: 3px;
+    padding-bottom: 0.5vh;
 }
-
 
 /* ---------- BURGER MENU ---------- */
 .burger-menu {
-    width: 48px;
-    height: 48px;
+    width: 9.5vw;
+    height: 9.5vw;
     display: none;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    border: 2px solid rgba(255, 255, 255, 0.2); 
-    border-radius: 6px;
+    justify-content: space-evenly;
+    flex-direction: column;
+    border: 0.5vw solid rgba(255, 255, 255, 0.2);
+    border-radius: 1.25vw;
     cursor: pointer;
     transition: 0.3s;
 }
@@ -509,364 +599,245 @@ textarea:focus::placeholder {
     background-color: rgb(255, 255, 255, 0.1);
 }
 
+/* ---------- PRELOAD IMAGES ---------- */
+#preload-image {
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    position: absolute;
+    background: url('../img/close-hover.png'),
+                url('../img/next-button-hover.png'),
+                url('../img/prev-button-hover.png'),
+                url('../img/logos/github-logo-hover.svg'),
+                url('../img/logos/linkedin-logo-hover.svg'),
+                url('../img/logos/twitter-logo-hover.svg');
+}
 
 /* ---------- MEDIA QUERIES ---------- */
-@media screen and (max-width: 1366px) and (max-height: 900px) {
-    #container {
-        min-height: 600px;
+@media screen and (max-width: 1024px) and (orientation: portrait) {
+    #nav-bar {
+        height: 13.4vw;
+        justify-content: space-between;
+        font-size: 3.6vw;
+        border-bottom: 0.8vw solid #9e2a2b;
     }
 
-    #nav-bar {
-        height: 68px;
-        font-size: 20px;
-        border-bottom: 4px solid #9e2a2b;
+    #code-name {
+        margin-left: 4vw;
+    }
+
+    #about-btn {
+        border-left: 0;
+    }
+
+    #projects-btn {
+        border-left: 0.5vw solid #464544;
+        border-right: 0.5vw solid #464544;
+    }
+    
+    #contact-btn {
+        border-right: 0;
+    }
+
+    .nav-menu {
+        height: 11.5vw;
+        background-color: #181615;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 0.8vw);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border-bottom-left-radius: 3vw;
+        overflow: hidden;
+    }
+    
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
+    .burger-menu {
+        display: flex;
+        margin-right: 3vw;
     }
 
     #title-card {
-        width: 590px;
-        height: 270px;
-        text-shadow: 4px 4px black;
-        border-radius: 15px;
+        width: 100vw;
+        height: 49vw;
+        text-shadow: 0.6vw 0.6vw black;
+        border-radius: 0;
     }
 
-    #front-end {   
-        font-size: 65px;
+    #front-end {
+        font-size: 12vw;
     }
 
     #web-dev {
-        font-size: 55px;
+        font-size: 10vw;
     }
 
     #sub-text {
-        font-size: 21px;
-        margin: 15px;
+        font-size: 3.8vw;
+        letter-spacing: 0.15vw;
+        margin-top: 2.65vw;
     }
 
     .arrows {
-        padding-right: 4px;
+        padding-right: 1vw;
     }
 
     #links {
-        width: 320px;
-        margin-top: 25px;
-    }
-
-    .link-button {
-        width: 85px;
-        height: 85px;
-        background-size: 45px 45px;
-        border-radius: 8px;
-    }
-
-    .modal-body {
-        width: 520px;
-        border-radius: 10px;
-        padding: 28px;
-    }
-
-    .header {
-        font-size: 20px;
-    }
-
-    .close-btn {
-        height: 28px;
-        width: 28px;
-        margin-right: 10px;
-        margin-top: 10px;
-        font-size: 25px;
-        padding-bottom: 4px;
-    }
-
-    #border-line {
-        height: 2px;
-    }
-
-    .modal-text {
-        font-size: 16px;
-        padding-top: 10px;
-    }
-
-    #projects {
-        height: 450px;
-    }
-
-    .project-thumbnail {
-        border: 1px solid gray;
-        border-radius: 2px;
-    }
-
-    .project-thumbnail:hover {
-        border: 1px solid #2a2827;
-    }
-
-    .project-buttons {
-        font-size: 13px;
-    }
-
-    .view-button {
-        width: 120px;
-        border-radius: 4px;
-        font-size: 17px;
-    }
-
-    #contact-form {
-        padding-top: 10px;
-    }
-
-    label {
-        font-size: 16px;
-    }
-
-    .form-group {
-        margin-bottom: 5px;
-    }
-
-    input,
-    textarea {
-        padding: 7px;
-    }
-
-    #send-btn {
-        width: 100px;
-        height: 40px;
-        font-size: 16px;
-        border-radius: 5px;
-    }
-
-    #sent-alert {
-        height: 40px;
-        font-size: 14px;
-    }
-
-    #sent-tick {
-        width: 20px;
-        padding-right: 3px;
-    }
-
-    #footer {
-        height: 58px;
-        border-top: 4px solid #ffffff;
-        font-size: 16px;
-        letter-spacing: 0.5px;
-    }
-}
-
-@media screen and (min-width: 1024px) and (orientation: portrait) {
-    #projects {
-        height: 720px;
-    }
-
-    .project-thumbnail {
-        margin-bottom: 15px;
-    }
-
-    .view-button {
-        width: 170px;
-        font-size: 25px;
-    }
-
-    #footer {
-        font-size: 28px;
-    }
-}
-
-@media screen and (max-width: 730px) {
-    #nav-bar {
-        justify-content: space-between;
-    }
-
-    #code-name {
-        margin-left: 20px;
-    }
-
-    #about-btn {
-        border-left: 0;
-    }
-    
-    #contact-btn {
-        border-right: 0;
-    }
-
-    .nav-menu {
-        background-color: #181615;
-        position: absolute;
-        right: 0;
-        top: calc(100% + 4px);
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        border-bottom-left-radius: 10px;
-        overflow: hidden;
-    }
-    
-    .nav-active {
-        transform: translateX(0%);
-    }
-    
-    .burger-menu {
-        display: flex;
-        margin-right: 20px;
-    }
-
-    #title-card {
-        width: 100vw;
-        border-radius: 0;
-    }
-}
-
-@media screen and (min-width: 600px) and (orientation: portrait) {
-    #nav-bar {
-        height: 10%;
-        font-size: 3.5vw;
-    }
-
-    #nav-bar {
-        justify-content: space-between;
-        border-bottom: 0.65vh solid #9e2a2b;
-    }
-
-    #code-name {
-        margin-left: 5vw;
-    }
-
-    #about-btn {
-        border-left: 0;
-    }
-    
-    #contact-btn {
-        border-right: 0;
-    }
-
-    .nav-menu {
-        background-color: #181615;
-        position: absolute;
-        right: 0;
-        top: calc(100% + 0.65vh);
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        border-bottom-left-radius: 15px;
-        overflow: hidden;
-    }
-    
-    .nav-active {
-        transform: translateX(0%);
-    }
-    
-    .burger-menu {
-        width: 6.5vh;
-        height: 70%;
-        display: flex;
-        border: 3px solid rgba(255, 255, 255, 0.2);
-        border-radius: 8px;
-        margin-right: 5vw;
-    }
-
-    #title-card {
-        width: 100vw;
-        height: 40vw;
-        border-radius: 0;
-    }
-
-    #front-end {   
-        font-size: 11vw;
-    }
-
-    #web-dev {
-        font-size: 9vw;
-    }
-
-    #sub-text {
-        font-size: 3.5vw;
-    }
-
-    #links {
-        width: 56vw;
+        width: 53.25vw;
         margin-top: 4vw;
     }
 
     .link-button {
-        width: 15vw;
-        height: 15vw;
+        width: 14.3vw;
+        height: 14.3vw;
         background-size: 8vw 8vw;
-        border-radius: 1.5vw;
+        border-radius: 1.25vw;
     }
 
     .modal-body {
-        width: 75%;
-        padding: 4vw;
+        width: 87vw;
+        border-radius: 2vw;
+        padding: 4.75vw;
     }
 
     .header {
-        font-size: 3.5vw;
+        font-size: 3.55vw;
     }
 
     .close-btn {
-        height: 4.75vw;
-        width: 4.75vw;
-        margin-right: 1.75vw;
-        margin-top: 1.75vw;
+        height: 5.25vw;
+        width: 5.25vw;
+        margin-right: 2vw;
+        margin-top: 2vw;
         font-size: 4.5vw;
-        padding-bottom: 0.9vw;
-    }
-
-    #border-line {
-        height: 3px;
     }
 
     .modal-text {
+        font-size: 3.15vw;
+        padding-top: 1.25vw;
+    }
+
+    #projects-grid {
+        height: 67vw;
+        gap: 2.7vw;
+        margin-top: 2.7vw;
+        margin-bottom: 2.7vw;
+    }
+
+    .title {
+        font-size: 3.5vw;
+    }
+
+    .view-code {
+        width: 19vw;
         font-size: 2.75vw;
-        padding-top: 15px;
+        letter-spacing: 0.1vw;
+        border-radius: 0.6vw;
+    }
+
+    #page-nav {
+        height: 6.5vw;
+        margin-top: 2.7vw;
+    }
+
+    #prev, #number, #next {
+        width: 6.5vw;
+        height: 6.5vw;
+    }
+
+    #number {
+        border: 0.6vw solid #2a2827;
+        font-size: 3.5vw;
     }
 
     #contact-form {
-        padding-top: 15px;
+        padding-top: 1.25vw;
     }
 
     label {
-        font-size: 2.75vw;
-        padding-bottom: 3px;
+        font-size: 3.15vw;
     }
 
     .form-group {
-        margin-bottom: 10px;
+        margin-bottom: 1.25vw;
     }
 
     input,
     textarea {
-        padding: 1vh;
+        font-size: 2.65vw;
+        padding: 1.35vw;
+    }
+
+    #button-section {
+        margin-top: 2vw;
     }
 
     #send-btn {
-        width: 17vw;
-        height: 6.5vw;
-        font-size: 2.75vw;
-        border-radius: 1vw;
+        width: 16vw;
+        height: 6.75vw;
+        font-size: 3.15vw;
+        letter-spacing: 0.2vw;
+        border-radius: 0.9vw;
     }
 
-    #sent-alert {
-        height: 6.5vw;
-        font-size: 2.5vw;
+    #message-sent {
+        height: 6.75vw;
+        font-size: 2.7vw;
     }
 
-    #sent-tick {
-        width: 3.5vw;
-        padding-right: 6px;
+    #sent-icon {
+        width: 4vw;
+        padding-right: 0.7vw;
     }
 
     #footer {
-        height: 9%;
-        border-top: 0.65vh solid #ffffff;
+        height: 12vw;
+        border-top: 0.8vw solid #ffffff;
+        font-size: 2.8vw;
+        letter-spacing: 0.2vw;
+        padding-bottom: 0.7vw;
     }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 500px) {
+    #nav-bar {
+        height: 17.5vw;
+        font-size: 4.5vw;
+        border-bottom: 4px solid #9e2a2b;;
+    }
+
+    .burger-menu {
+        width: 12.5vw;
+        height: 12.5vw;
+        border: 0.6vw solid rgba(255, 255, 255, 0.2);
+        border-radius: 1.75vw;
+    }
+
+    .nav-menu {
+        height: 15vw;
+        top: calc(100% + 4px);
+    }
+
+    #code-name {
+        font-size: 5.3vw;
+    }
+
+    #projects-btn {
+        border-left: 0.8vw solid #464544;
+        border-right: 0.8vw solid #464544;
+    }
+
     #title-card {
-        height: 50vw;
+        height: 60vw;
         text-shadow: 0.75vw 0.75vw black;
     }
 
     #front-end {
-        font-size: 13vw;   
-        line-height: 10vw;
+        font-size: 15.5vw;   
+        line-height: 13vw;
     }
 
     #hide-web {
@@ -874,160 +845,133 @@ textarea:focus::placeholder {
     }
 
     #web-dev {
-        font-size: 12vw;
+        font-size: 13.5vw;
     }  
     
     #sub-text {
-        font-size: 4vw;
-        margin: 0;
-        margin-top: 3vw;
-    }
-
-    .modal-body {
-        width: 80%;
-        padding: 24px;
-    }
-
-    #button-section {
-        height: 45px;
-    }
-
-    #send-alert {
-        margin-right: 15px;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    #hide-view {
-        display: none;
-    }
-
-    .view-button {
-        width: 85px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .nav-menu {
-        height: 15vw;
         font-size: 4.5vw;
-    }
-
-    #projects-btn {
-        border-left: 2px solid #464544;
-        border-right: 2px solid #464544;
-    }
-
-    #title-card {
-        height: 60vw;
-    }
-
-    #front-end {
-        font-size: 14.5vw;   
-        line-height: 12vw;
-    }
-
-    #web-dev {
-        font-size: 13.5vw;
-    }
-
-    #sub-text {
-        font-size: 4.5vw;
-        letter-spacing: 0.5px;
         margin-top: 3vw;
     }
 
     #links {
-        width: 70%;
-        margin-top: 6vw;
+        width: 75vw;
+        margin-top: 5vw;
     }
 
     .link-button {
-        width: 19vw;
-        height: 19vw;
-        background-size: 10vw 10vw;
-        border-radius: 7px;
-    }
-
-    #button-section {
-        margin-top: 5px;
+        width: 20vw;
+        height: 20vw;
+        background-size: 11vw 11vw;
+        border-radius: 1.6vw;
     }
 
     .modal-body {
-        width: 90%;
-    }
-
-    #project-two {
-        background-image: url('../img/thumbnails/kal-3000_m.png');
-    }
-}
-
-@media screen and (max-width: 390px) {
-    #code-name {
-        margin-left: 15px;
-    }
-
-    .burger-menu {
-        margin-right: 15px;
-    }
-
-    #projects {
-        padding-bottom: 0;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    #code-name {
-        font-size: 6vw;
+        width: 90vw;
+        padding: 6.5vw;
     }
 
     .header {
-        font-size: 18px;
+        font-size: 5.5vw;
     }
 
     .close-btn {
-        width: 26px;
-        height: 26px;
-    }
-
-    .modal-body {
-        padding: 21px;
+        width: 7.75vw;
+        height: 7.75vw;
+        margin-right: 2.5vw;
+        margin-top: 2.5vw;
+        font-size: 7vw;
     }
 
     .modal-text {
-        font-size: 14px;
+        font-size: 4.55vw;
+        padding-top: 2vw;
     }
 
-    #projects {
-        height: 400px;
+    #projects-grid {
+        width: 100%;
+        height: 108vw;
+        gap: 4.5vw;
+        margin-top: 4.5vw;
+        margin-bottom: 4.5vw;
+    }
+
+    .project {
+        transform: scale(1.25);
+    }
+
+    .project:hover {
+        transform: scale(1.35);
+    }
+
+    .title {
+        height: 20%;
+    }
+
+    .view-code {
+        width: 28vw;
+        font-size: 4vw;
+        letter-spacing: 0.2vw;
+        border-radius: 1.1vw;
+    }
+
+    #page-nav {
+        height: 10vw;
+        margin-top: 4.5vw;
+    }
+
+    #prev, #number, #next {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    #number {
+        border: 1vw solid #2a2827;
+        font-size: 4.5vw;
+    }
+
+    #contact-form {
+        padding-top: 2vw;
     }
 
     label {
-        font-size: 14px;
+        font-size: 4.55vw;
+    }
+
+    .form-group {
+        margin-bottom: 2vw;
+    }
+
+    input,
+    textarea {
+        font-size: 4vw;
+        padding: 1.5vw;
     }
 
     #button-section {
-        height: 40px;
+        margin-top: 3vw;
     }
 
     #send-btn {
-        width: 90px;
-        height: 35px;
-        font-size: 14px;
+        width: 25vw;
+        height: 10vw;
+        font-size: 4.5vw;
+        border-radius: 1.25vw;
     }
 
-    #sent-alert {
-        height: 35px;
-        font-size: 14px;
+    #message-sent {
+        height: 10vw;
+        font-size: 4.3vw;
+    }
+
+    #sent-icon {
+        width: 5.3vw;
+        padding-right: 1vw;
     }
 
     #footer {
-        font-size: 5vw;
-    }
-}
-
-@media screen and (max-width: 300px) {
-    #projects {
-        height: 400px;
+        height: 16vw;
+        border-top: 4px solid white;
+        font-size: 4.25vw;
+        letter-spacing: 0.3vw;
     }
 }

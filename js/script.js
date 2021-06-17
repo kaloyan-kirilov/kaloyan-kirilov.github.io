@@ -1,3 +1,21 @@
+// Viewport Height to Pixels
+const container = document.getElementById('container');
+const mediaQuery = window.matchMedia('(max-width: 1024px) and (orientation: portrait)');
+
+function pixelHeight(query) {
+    if (query.matches) {
+        container.style.height = window.innerHeight + 'px';
+    } else {
+        container.style.height = null;
+    }
+}
+
+function heightResize() {
+    pixelHeight(mediaQuery);
+}
+
+window.onresize = heightResize;
+
 // Navigation menu
 const navSlide = () => {
     const burger = document.querySelector('.burger-menu');
@@ -33,11 +51,119 @@ const projectsClose = document.getElementById('projects-close');
 projectsBtn.onclick = function() {
     projectsModal.classList.add('show');
     projectsBtn.classList.add('active');
+    modalPage_1();
 }
 
 projectsClose.onclick = function() {
     projectsModal.classList.remove('show');
     projectsBtn.classList.remove('active');
+}
+
+// Projects Modal Pages
+const thumbnail_1 = document.getElementById('thumbnail-1');
+const thumbnail_2 = document.getElementById('thumbnail-2');
+const thumbnail_3 = document.getElementById('thumbnail-3');
+const thumbnail_4 = document.getElementById('thumbnail-4');
+
+const title_1 = document.getElementById('title-1');
+const title_2 = document.getElementById('title-2');
+const title_3 = document.getElementById('title-3');
+const title_4 = document.getElementById('title-4');
+
+const link_1 = document.getElementById('link-1');
+const link_2 = document.getElementById('link-2');
+const link_3 = document.getElementById('link-3');
+const link_4 = document.getElementById('link-4');
+
+const code_1 = document.getElementById('code-1');
+const code_2 = document.getElementById('code-2');
+const code_3 = document.getElementById('code-3');
+const code_4 = document.getElementById('code-4');
+
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+const pageNum = document.getElementById('number');
+
+function modalPage_1() {
+    // PAGE 1 - Project 1: Kartoon Fool
+    title_1.innerText = 'Kartoon Fool';
+    thumbnail_1.style.backgroundImage = "url('../img/thumbnails/kartoon-fool.png')";
+    link_1.href = 'https://www.kartoonfool.com';
+    code_1.href = 'https://github.com/kaloyan-kirilov/kartoon-fool';
+    link_1.target = '_blank';
+    code_1.target = '_blank';
+
+    // PAGE 1 - Project 2: Calculator
+    title_2.innerText = 'Calculator';
+    thumbnail_2.style.backgroundImage = "url('../img/thumbnails/kal-3000.png')";
+    link_2.href = 'https://kaloyan-kirilov.github.io/calculator';
+    code_2.href = 'https://github.com/kaloyan-kirilov/calculator';
+    link_2.target = '_blank';
+    code_2.target = '_blank';
+
+    // PAGE 1 - Project 3: Card Game
+    title_3.innerText = 'Card Game';
+    thumbnail_3.style.backgroundImage = "url('../img/thumbnails/card-game.png')";
+    link_3.href = 'https://kaloyan-kirilov.github.io/card-game';
+    code_3.href = 'https://github.com/kaloyan-kirilov/card-game';
+    link_3.target = '_blank';
+    code_3.target = '_blank';
+
+    // PAGE 1 - Project 4: Weather App
+    title_4.innerText = 'Weather App';
+    thumbnail_4.style.backgroundImage = "url('../img/thumbnails/weather-app.png')";
+    link_4.href = 'https://kaloyan-kirilov.github.io/weather-app';
+    code_4.href = 'https://github.com/kaloyan-kirilov/weather-app';
+    link_4.target = '_blank';
+    code_4.target = '_blank';
+
+    prevBtn.classList.add('inactive-btn');
+
+    pageNum.innerText = '1';
+
+    nextBtn.classList.remove('inactive-btn');
+    nextBtn.onclick = modalPage_2;
+}
+
+function modalPage_2() {
+        // PAGE 2 - Project 5: null
+        title_1.innerText = 'null :P';
+        thumbnail_1.style.backgroundImage = null;
+        link_1.href = 'javascript:void(0);';
+        code_1.href = 'javascript:void(0);';
+        link_1.target = '_self';
+        code_1.target = '_self';
+    
+        // PAGE 2 - Project 6: null
+        title_2.innerText = 'null :P';
+        thumbnail_2.style.backgroundImage = null;
+        link_2.href = 'javascript:void(0);';
+        code_2.href = 'javascript:void(0);';
+        link_2.target = '_self';
+        code_2.target = '_self';
+    
+        // PAGE 2 - Project 7: null
+        title_3.innerText = 'null :P';
+        thumbnail_3.style.backgroundImage = null;
+        link_3.href = 'javascript:void(0);';
+        code_3.href = 'javascript:void(0);';
+        link_3.target = '_self';
+        code_3.target = '_self';
+    
+        // PAGE 2 - Project 8: null
+        title_4.innerText = 'null :P';
+        thumbnail_4.style.backgroundImage = null;
+        link_4.href = 'javascript:void(0);';
+        code_4.href = 'javascript:void(0);';      
+        link_4.target = '_self';
+        code_4.target = '_self';
+    
+        prevBtn.classList.remove('inactive-btn');
+        prevBtn.onclick = modalPage_1;
+
+        pageNum.innerText = '2';
+    
+        nextBtn.classList.add('inactive-btn');
 }
 
 // Contact modal

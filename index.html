@@ -48,49 +48,54 @@
                 </div>
             </div>
             <div id="links">
-                <a href="https://github.com/kaloyan-kirilov/" target="_blank"><div id="git-hub" class="link-button"></div></a>
-                <a href="https://www.linkedin.com/" target="_blank"><div id="linked-in" class="link-button"></div></a>
-                <a href="https://twitter.com/" target="_blank"><div id="twitter" class="link-button"></div></a>
+                <div class="link-button"><a id="git-hub" class="anchor" href="https://github.com/kaloyan-kirilov/" target="_blank"></a></div>
+                <div class="link-button"><a id="linked-in" class="anchor" href="https://www.linkedin.com/" target="_blank"></a></div>
+                <div class="link-button"><a id="twitter" class="anchor" href="https://twitter.com/" target="_blank"></a></div>
             </div>
             <div id="about-modal" class="modal">
                 <div class="modal-body">
                     <div class="header">About Me</div>
-                    <div id="about-close" class="close-btn">&times;</div>
-                    <div id="border-line"></div>
+                    <div id="about-close" class="close-btn"></div>
+                    <div class="border-line"></div>
                     <p class="modal-text">&nbsp;Hello there. My name is Kaloyan Kirilov and I am quite passionate about building things for the web. I'm usually an artist and I have a degree and main interest in art, but I'm also very curious about computers and how they work. Generally I like looking at things analytically and figuring out what makes them tick. The dynamic development of the web technologies presents me with interesting challenges and a great learning experience. I really enjoy using my creativity in a bit more technical manner by developing stuff for the internet.</p>
                 </div>
             </div>
             <div id="projects-modal" class="modal">
                 <div class="modal-body">
                     <div class="header">Projects</div>
-                    <div id="projects-close" class="close-btn">&times;</div>
-                    <div id="border-line"></div>
-                    <div id="projects">
+                    <div id="projects-close" class="close-btn"></div>
+                    <div class="border-line"></div>
+                    <div id="projects-grid">
                         <div class="project-container">
-                            <a href="https://www.kartoonfool.com/" target="_blank"><div class="project-thumbnail"><div id="project-one"></div></div></a>
-                            <a href="https://github.com/kaloyan-kirilov/kartoon-fool" target="_blank"><div id="code-one" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div></a>
+                            <a id="link-1" href="" target=""><div class="thumbnail"><div id="thumbnail-1" class="project"><div class="hover"><div id="title-1" class="title"></div></div></div></div></a>
+                            <a id="code-1" href="" target=""><div class="view-code">View Code</div></a>
                         </div>
                         <div class="project-container">
-                            <a href="https://kaloyan-kirilov.github.io/calculator/" target="_blank"><div class="project-thumbnail"><div id="project-two"></div></div></a>
-                            <a href="https://github.com/kaloyan-kirilov/calculator" target="_blank"><div id="code-two" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div></a>
+                            <a id="link-2" href="" target=""><div class="thumbnail"><div id="thumbnail-2" class="project"><div class="hover"><div id="title-2" class="title"></div></div></div></div></a>
+                            <a id="code-2" href="" target=""><div class="view-code">View Code</div></a>
                         </div>
                         <div class="project-container">
-                            <div class="project-thumbnail"></div>
-                            <div id="code-three" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div>
+                            <a id="link-3" href="" target=""><div class="thumbnail"><div id="thumbnail-3" class="project"><div class="hover"><div id="title-3" class="title"></div></div></div></div></a>
+                            <a id="code-3" href="" target=""><div class="view-code">View Code</div></a>
                         </div>
-
                         <div class="project-container">
-                            <div class="project-thumbnail"></div>
-                            <div id="code-four" class="view-button"><span id="hide-view">View&nbsp;</span>Code</div>
+                            <a id="link-4" href="" target=""><div class="thumbnail"><div id="thumbnail-4" class="project"><div class="hover"><div id="title-4" class="title"></div></div></div></div></a>
+                            <a id="code-4" href="" target=""><div class="view-code">View Code</div></a>
                         </div>
+                    </div>
+                    <div class="border-line"></div>
+                    <div id="page-nav">
+                        <div id="prev"></div>
+                        <div id="number"></div>
+                        <div id="next"></div>
                     </div>
                 </div>
             </div>
             <div id="contact-modal" class="modal">
                 <div class="modal-body">
                     <div class="header">Contact Me</div>
-                    <div id="contact-close" class="close-btn">&times;</div>
-                    <div id="border-line"></div>
+                    <div id="contact-close" class="close-btn"></div>
+                    <div class="border-line"></div>
                     <form id="contact-form">
                         <div class="form-group">
                             <label for="name">Name :</label>
@@ -106,13 +111,14 @@
                         </div>
                         <div id="button-section">
                             <button type="submit" id="send-btn">Send</button>
-                            <div id="sent-alert"><img id="sent-tick" src="img/tick-icon.svg" alt="tick">MESSAGE SENT</div>
+                            <div id="message-sent"><img id="sent-icon" src="img/tick-icon.svg" alt="icon">MESSAGE SENT</div>
                         </div>
                     </form>
                 </div>
             </div>
         </main>
-        <footer id="footer">&copy; 2020-21 Kaloyan Kirilov</footer>
+        <footer id="footer">&copy;2020-21 Kaloyan Kirilov</footer>
+        <div id="preload-image"></div>
     </div>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
