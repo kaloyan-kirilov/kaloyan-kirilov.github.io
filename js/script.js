@@ -10,11 +10,13 @@ function pixelHeight(query) {
     }
 }
 
-function heightResize() {
-    pixelHeight(mediaQuery);
-}
+pixelHeight(mediaQuery);
 
-window.onresize = heightResize;
+// function heightResize() {
+//     pixelHeight(mediaQuery);
+// }
+
+// window.onresize = heightResize;
 
 // Navigation menu
 const navSlide = () => {
