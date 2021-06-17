@@ -208,11 +208,11 @@ function sendMessage(e) {
     saveMessage(name, email, message);
 
     document.getElementById('send-btn').style.display = 'none';
-    document.getElementById('sent-alert').style.display = 'flex';
+    document.getElementById('message-sent').style.display = 'flex';
     document.getElementById('contact-form').reset();
 
     setTimeout(function() {
-        document.getElementById('sent-alert').style.display = 'none';
+        document.getElementById('message-sent').style.display = 'none';
         document.getElementById('send-btn').style.display = 'block';
     },5000);
 }
