@@ -806,32 +806,55 @@ textarea:focus::placeholder {
     }
 }
 
-@media screen and (max-width: 500px) and (orientation: portrait) {
+@media screen and (max-width: 500px) {
     #nav-bar {
         height: 17.5vw;
+        justify-content: space-between;
         font-size: 4.5vw;
         border-bottom: 4px solid #9e2a2b;;
     }
 
-    .burger-menu {
-        width: 12.5vw;
-        height: 12.5vw;
-        border: 0.6vw solid rgba(255, 255, 255, 0.2);
-        border-radius: 1.75vw;
-    }
-
-    .nav-menu {
-        height: 15vw;
-        top: calc(100% + 4px);
-    }
-
     #code-name {
         font-size: 5.3vw;
+        margin-left: 4vw;
+    }
+
+    #about-btn {
+        border-left: 0;
     }
 
     #projects-btn {
         border-left: 0.8vw solid #464544;
         border-right: 0.8vw solid #464544;
+    }
+
+    #contact-btn {
+        border-right: 0;
+    }
+
+    .nav-menu {
+        height: 15vw;
+        background-color: #181615;
+        position: absolute;
+        right: 0;
+        top: calc(100% + 4px);
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        border-bottom-left-radius: 3vw;
+        overflow: hidden;
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+    }
+
+    .burger-menu {
+        display: flex;
+        width: 12.5vw;
+        height: 12.5vw;
+        border: 0.6vw solid rgba(255, 255, 255, 0.2);
+        border-radius: 1.75vw;
+        margin-right: 3vw;
     }
 
     #title-card {
