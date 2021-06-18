@@ -1,16 +1,16 @@
 // Viewport Height to Pixels
-const container = document.getElementById('container');
-const mediaQuery = window.matchMedia('(max-width: 1024px) and (orientation: portrait)');
+// const container = document.getElementById('container');
+// const mediaQuery = window.matchMedia('(max-width: 1024px) and (orientation: portrait)');
 
-function pixelHeight(query) {
-    if (query.matches) {
-        container.style.height = window.innerHeight + 'px';
-    } else {
-        container.style.height = null;
-    }
-}
+// function pixelHeight(query) {
+//     if (query.matches) {
+//         container.style.height = window.innerHeight + 'px';
+//     } else {
+//         container.style.height = null;
+//     }
+// }
 
-pixelHeight(mediaQuery);
+// pixelHeight(mediaQuery);
 
 // function heightResize() {
 //     pixelHeight(mediaQuery);
