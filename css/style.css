@@ -673,7 +673,7 @@ textarea:focus::placeholder {
     #sub-text {
         font-size: 3.8vw;
         letter-spacing: 0.15vw;
-        margin-top: 2.65vw;
+        margin: 2.65vw;
     }
 
     .arrows {
@@ -872,7 +872,7 @@ textarea:focus::placeholder {
     
     #sub-text {
         font-size: 4.5vw;
-        margin-top: 3vw;
+        margin: 3vw;
     }
 
     #links {
