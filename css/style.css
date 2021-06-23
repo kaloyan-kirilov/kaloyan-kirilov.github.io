@@ -489,6 +489,7 @@ textarea {
 input:focus,
 textarea:focus {
     outline: none;
+    border: 1px solid #181615;
 }
 
 textarea {
