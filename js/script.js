@@ -1,22 +1,13 @@
 // Viewport Height to Pixels
-// const container = document.getElementById('container');
-// const mediaQuery = window.matchMedia('(max-width: 1024px) and (orientation: portrait)');
+const container = document.getElementById('container');
 
-// function pixelHeight(query) {
-//     if (query.matches) {
-//         container.style.height = window.innerHeight + 'px';
-//     } else {
-//         container.style.height = null;
-//     }
-// }
+function setHeight() {
+    container.style.height = window.innerHeight + 'px';    
+}
 
-// pixelHeight(mediaQuery);
-
-// function heightResize() {
-//     pixelHeight(mediaQuery);
-// }
-
-// window.onresize = heightResize;
+function resetHeight() {
+    container.style.height = null;    
+}
 
 // Navigation menu
 const navSlide = () => {
@@ -176,11 +167,13 @@ const contactClose = document.getElementById('contact-close');
 contactBtn.onclick = function() {
     contactModal.classList.add('show');
     contactBtn.classList.add('active');
+    setHeight();
 }
 
 contactClose.onclick = function() {
     contactModal.classList.remove('show');
     contactBtn.classList.remove('active');
+    resetHeight();
 }
 
 // Contact form with Firebase
