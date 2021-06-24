@@ -615,7 +615,8 @@ textarea:focus::placeholder {
                 url('../img/thumbnails/kartoon-fool.png'),
                 url('../img/thumbnails/kal-3000.png'),
                 url('../img/thumbnails/card-game.png'),
-                url('../img/thumbnails/weather-app.png');
+                url('../img/thumbnails/weather-app.png'),
+                url('../img/tick-icon.svg');
 }
 
 /* ---------- MEDIA QUERIES ---------- */
