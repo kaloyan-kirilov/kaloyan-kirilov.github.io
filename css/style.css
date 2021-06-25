@@ -503,7 +503,6 @@ textarea:focus::placeholder {
 
 #button-section {
     width: 100%;
-    height: calc(4.1vh + 10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -513,7 +512,7 @@ textarea:focus::placeholder {
 
 #send-btn {   
     width: calc(10.5vh + 25px);
-    height: 100%;
+    height: calc(4.1vh + 10px);
     font-family: "Roboto Slab";
     font-size: calc(1.85vh + 5px);
     letter-spacing: 0.15vh;
