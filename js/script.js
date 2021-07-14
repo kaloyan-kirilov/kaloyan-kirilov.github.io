@@ -119,13 +119,13 @@ function modalPage_1() {
 }
 
 function modalPage_2() {
-        // PAGE 2 - Project 5: null
-        title_1.innerText = 'null :P';
-        thumbnail_1.style.backgroundImage = null;
-        link_1.href = 'javascript:void(0);';
-        code_1.href = 'javascript:void(0);';
-        link_1.target = '_self';
-        code_1.target = '_self';
+        // PAGE 2 - Project 5: React QuotePad
+        title_1.innerText = 'QuotePad';
+        thumbnail_1.style.backgroundImage = "url('../img/thumbnails/react-quotepad.png')";
+        link_1.href = 'https://kaloyan-kirilov.github.io/react-quotepad';
+        code_1.href = 'https://github.com/kaloyan-kirilov/react-quotepad';
+        link_1.target = '_blank';
+        code_1.target = '_blank';
     
         // PAGE 2 - Project 6: null
         title_2.innerText = 'null :P';
