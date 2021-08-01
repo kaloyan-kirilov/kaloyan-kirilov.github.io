@@ -127,13 +127,13 @@ function modalPage_2() {
         link_1.target = '_blank';
         code_1.target = '_blank';
     
-        // PAGE 2 - Project 6: null
-        title_2.innerText = 'null :P';
-        thumbnail_2.style.backgroundImage = null;
-        link_2.href = 'javascript:void(0);';
-        code_2.href = 'javascript:void(0);';
-        link_2.target = '_self';
-        code_2.target = '_self';
+        // PAGE 2 - Project 6: React Chat App
+        title_2.innerText = 'Chat App';
+        thumbnail_2.style.backgroundImage = "url('../img/thumbnails/chat-app.png')";
+        link_2.href = 'https://kaloyan-kirilov.github.io/chat-app';
+        code_2.href = 'https://github.com/kaloyan-kirilov/chat-app';
+        link_2.target = '_blank';
+        code_2.target = '_blank';
     
         // PAGE 2 - Project 7: null
         title_3.innerText = 'null :P';

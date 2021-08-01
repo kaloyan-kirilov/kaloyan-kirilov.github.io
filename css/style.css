@@ -616,6 +616,7 @@ textarea:focus::placeholder {
                 url('../img/thumbnails/card-game.png'),
                 url('../img/thumbnails/weather-app.png'),
                 url('../img/thumbnails/react-quotepad.png'),
+                url('../img/thumbnails/chat-app.png'),
                 url('../img/tick-icon.svg');
 }
 
