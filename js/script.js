@@ -135,13 +135,13 @@ function modalPage_2() {
         link_2.target = '_blank';
         code_2.target = '_blank';
     
-        // PAGE 2 - Project 7: null
-        title_3.innerText = 'null :P';
-        thumbnail_3.style.backgroundImage = null;
-        link_3.href = 'javascript:void(0);';
-        code_3.href = 'javascript:void(0);';
-        link_3.target = '_self';
-        code_3.target = '_self';
+        // PAGE 2 - Project 7: LA Portal
+        title_3.innerText = 'LA Portal';
+        thumbnail_3.style.backgroundImage = "url('../img/thumbnails/los-angeles.png')";
+        link_3.href = 'https://kaloyan-kirilov.github.io/los-angeles';
+        code_3.href = 'https://github.com/kaloyan-kirilov/los-angeles';
+        link_3.target = '_blank';
+        code_3.target = '_blank';
     
         // PAGE 2 - Project 8: null
         title_4.innerText = 'null :P';
