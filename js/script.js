@@ -81,7 +81,7 @@ function modalPage_1() {
     // PAGE 1 - Project 1: Kartoon Fool
     title_1.innerText = 'Kartoon Fool';
     thumbnail_1.style.backgroundImage = "url('../img/thumbnails/kartoon-fool.png')";
-    link_1.href = 'https://www.kartoonfool.com';
+    link_1.href = 'https://kartoon-fool.netlify.app';
     code_1.href = 'https://github.com/kaloyan-kirilov/kartoon-fool';
     link_1.target = '_blank';
     code_1.target = '_blank';
