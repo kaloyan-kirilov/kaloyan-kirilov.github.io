@@ -209,7 +209,7 @@ function sendMessage(e) {
     setTimeout(function() {
         document.getElementById('message-sent').style.display = 'none';
         document.getElementById('send-btn').style.display = 'block';
-    },5000);
+    },4500);
 }
 
 function getInputValue(id) {

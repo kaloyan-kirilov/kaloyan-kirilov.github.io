@@ -503,6 +503,7 @@ textarea:focus::placeholder {
 
 #button-section {
     width: 100%;
+    height: calc(4.1vh + 10px);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -512,7 +513,7 @@ textarea:focus::placeholder {
 
 #send-btn {   
     width: calc(10.5vh + 25px);
-    height: calc(4.1vh + 10px);
+    height: inherit;
     font-family: "Roboto Slab";
     font-size: calc(1.85vh + 5px);
     letter-spacing: 0.15vh;
@@ -531,7 +532,7 @@ textarea:focus::placeholder {
 }
 
 #message-sent {
-    height: 100%;
+    height: inherit;
     display: none;
     align-items: center;
     justify-content: center;
@@ -785,18 +786,17 @@ textarea:focus::placeholder {
 
     #button-section {
         margin-top: 2vw;
+        height: 6.75vw;
     }
 
     #send-btn {
         width: 16vw;
-        height: 6.75vw;
         font-size: 3.15vw;
         letter-spacing: 0.2vw;
         border-radius: 0.9vw;
     }
 
     #message-sent {
-        height: 6.75vw;
         font-size: 2.7vw;
     }
 
@@ -992,17 +992,16 @@ textarea:focus::placeholder {
 
     #button-section {
         margin-top: 3vw;
+        height: 10vw;
     }
 
     #send-btn {
         width: 25vw;
-        height: 10vw;
         font-size: 4.5vw;
         border-radius: 1.25vw;
     }
 
     #message-sent {
-        height: 10vw;
         font-size: 4.5vw;
     }
 
