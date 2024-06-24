@@ -480,6 +480,7 @@ label {
 input,
 textarea {
     width: 100%;
+    font-family: Arial, sans-serif;
     font-size: calc(1.4vh + 4px);
     padding: 1vh;
     background-color: #dfdad2;
@@ -531,7 +532,7 @@ textarea:focus::placeholder {
     cursor: pointer;
 }
 
-#message-sent {
+#message-alert {
     height: inherit;
     display: none;
     align-items: center;
@@ -539,23 +540,13 @@ textarea:focus::placeholder {
     font-family: "Tomorrow-Medium";
     font-size: calc(1.6vh + 4px);
     border: 0;
-    color: #7dba3a;
     letter-spacing: 0.5px;
     font-weight: bold;
-
-    animation-name: message-sent;
-    animation-duration: 2s;
-    animation-delay: 3s;
 }
 
-#sent-icon {
+#alert-icon {
     width: calc(2.3vh + 7px);
     padding-right: calc(0.2vh + 2px);
-}
-
-@keyframes message-sent {
-    from {opacity: 1;}
-    to {opacity: 0;}
 }
 
 /* ---------- FOOTER ---------- */
@@ -796,11 +787,11 @@ textarea:focus::placeholder {
         border-radius: 0.9vw;
     }
 
-    #message-sent {
+    #message-alert {
         font-size: 2.7vw;
     }
 
-    #sent-icon {
+    #alert-icon {
         width: 4vw;
         padding-right: 0.7vw;
     }
@@ -1001,11 +992,11 @@ textarea:focus::placeholder {
         border-radius: 1.25vw;
     }
 
-    #message-sent {
+    #message-alert {
         font-size: 4.5vw;
     }
 
-    #sent-icon {
+    #alert-icon {
         width: 5.3vw;
         padding-right: 1vw;
     }

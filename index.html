@@ -124,7 +124,10 @@
                         </div>
                         <div id="button-section">
                             <button type="submit" id="send-btn">Send</button>
-                            <div id="message-sent"><img id="sent-icon" src="img/tick-icon.svg" alt="icon">MESSAGE SENT</div>
+                            <div id="message-alert">
+                                <img id="alert-icon" src="" alt="icon">
+                                <div id="alert-text"></div>
+                            </div>
                         </div>
                     </form>
                 </div>
@@ -133,8 +136,16 @@
         <footer id="footer">&copy;2024 Kaloyan Kirilov</footer>
         <div id="preload-image"></div>
     </div>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/8.0.1/firebase-database.js"></script>
     <script src="js/script.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "6cXQ9lb7zvJkbLZwI",
+            });
+        })();
+    </script>
 </body>
 </html>

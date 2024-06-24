@@ -176,51 +176,41 @@ contactClose.onclick = function() {
     resetHeight();
 }
 
-// Contact form with Firebase
-var firebaseConfig = {
-    apiKey: "AIzaSyBFSfHT1n3KV6A43W_07PH8DttDXCvKJy4",
-    authDomain: "contact-form-bc80f.firebaseapp.com",
-    projectId: "contact-form-bc80f",
-    storageBucket: "contact-form-bc80f.appspot.com",
-    messagingSenderId: "828372448685",
-    appId: "1:828372448685:web:0dd2017c079381f0e79d24"
-  };
-  
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-
-var msgCollection = firebase.database().ref('messages');
-
-document.getElementById('contact-form').addEventListener('submit', sendMessage);
-
+// Contact form with EmailJS
 function sendMessage(e) {
     e.preventDefault();
 
-    var name = getInputValue('input-name');
-    var email = getInputValue('input-email');
-    var message = getInputValue('input-message');   
+    const message = {
+        name: document.getElementById('input-name').value,
+        email: document.getElementById('input-email').value,
+        message: document.getElementById('input-message').value
+    }
 
-    saveMessage(name, email, message);
+    emailjs
+        .send("@gmail", "kk_template", message)
+        .then(() => {messageAlert("MESSAGE SENT", "img/tick-icon.svg", null)}, (error) => {messageAlert("MESSAGE FAILED", "img/x-icon.svg", error)});
 
-    document.getElementById('send-btn').style.display = 'none';
-    document.getElementById('message-sent').style.display = 'flex';
-    document.getElementById('contact-form').reset();
+    function messageAlert(text, image, error) {
+        document.getElementById('send-btn').style.display = 'none';
+        document.getElementById('message-alert').style.display = 'flex';
+        document.getElementById('alert-icon').src = image;
+        document.getElementById('alert-text').innerHTML = text;
+        document.getElementById('contact-form').reset();
 
-    setTimeout(function() {
-        document.getElementById('message-sent').style.display = 'none';
-        document.getElementById('send-btn').style.display = 'block';
-    },4500);
+        if (error == null) {
+            document.getElementById('message-alert').style.color = "#7dba3a";
+            console.log("Message sent successfully!");
+        } else {
+            document.getElementById('message-alert').style.color = "#c44536";
+            console.log("Message failed to send:", error.text);
+        }
+        
+
+        setTimeout(function() {
+            document.getElementById('message-alert').style.display = 'none';
+            document.getElementById('send-btn').style.display = 'block';
+        }, 4500);
+    }
 }
 
-function getInputValue(id) {
-    return document.getElementById(id).value;
-}
-
-function saveMessage(name, email, message) {
-    var newMessageRef = msgCollection.push();
-    newMessageRef.set({
-        name: name,
-        email: email,
-        message: message
-    });
-}
+document.getElementById('contact-form').addEventListener('submit', sendMessage);
