@@ -146,7 +146,6 @@ html, body {
 }
 
 #sub-text {
-    /* height: fit-content; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -156,20 +155,17 @@ html, body {
     color: #f0f3bd;
     text-shadow: none;
     margin: 1.5vh;
-/* 
-    background-color: green; */
 }
 
-.arrow-icon {
-    width: 2vh;
+.arrows {
+    font-size: calc(1.5vh + 7px);
+    font-family: "Rubik";
+    font-weight: 500;
+    font-style: normal;
+
+    color: #e8a035;
     margin-right: 0.5vh;
 }
-
-/* .arrows {
-    font-weight: bold;
-    color: #e8a035;
-    padding-right: 0.7vh;
-} */
 
 #links {
     width: calc(30vh + 85px);
@@ -692,9 +688,9 @@ textarea:focus::placeholder {
         margin: 2.65vw;
     }
 
-    .arrow-icon {
-        width: 3vw;
-        margin-right: 0.5vw;
+    .arrows {
+        font-size: calc(2vw + 7px);
+        margin-right: 0.75vw;
     }
 
     #links {
@@ -893,10 +889,6 @@ textarea:focus::placeholder {
     #sub-text {
         font-size: 4.5vw;
         margin: 3vw;
-    }
-
-    .arrow-icon {
-        width: 3.5vw;
     }
 
     #links {
