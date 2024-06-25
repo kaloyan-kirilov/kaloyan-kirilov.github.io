@@ -146,19 +146,30 @@ html, body {
 }
 
 #sub-text {
+    /* height: fit-content; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: "ZillaSlab-Medium";
     font-size: calc(2vh + 7px);
     letter-spacing: 0.15vh;
     color: #f0f3bd;
     text-shadow: none;
     margin: 1.5vh;
+/* 
+    background-color: green; */
 }
 
-.arrows {
+.arrow-icon {
+    width: 2vh;
+    margin-right: 0.5vh;
+}
+
+/* .arrows {
     font-weight: bold;
     color: #e8a035;
     padding-right: 0.7vh;
-}
+} */
 
 #links {
     width: calc(30vh + 85px);
@@ -681,8 +692,9 @@ textarea:focus::placeholder {
         margin: 2.65vw;
     }
 
-    .arrows {
-        padding-right: 1vw;
+    .arrow-icon {
+        width: 3vw;
+        margin-right: 0.5vw;
     }
 
     #links {
@@ -881,6 +893,10 @@ textarea:focus::placeholder {
     #sub-text {
         font-size: 4.5vw;
         margin: 3vw;
+    }
+
+    .arrow-icon {
+        width: 3.5vw;
     }
 
     #links {
