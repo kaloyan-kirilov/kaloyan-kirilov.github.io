@@ -78,11 +78,11 @@ const nextBtn = document.getElementById('next');
 const pageNum = document.getElementById('number');
 
 function modalPage_1() {
-    // PAGE 1 - Project 1: Kartoon Fool
-    title_1.innerText = 'Kartoon Fool';
-    thumbnail_1.style.backgroundImage = "url('../img/thumbnails/kartoon-fool.png')";
-    link_1.href = 'https://kartoon-fool.netlify.app';
-    code_1.href = 'https://github.com/kaloyan-kirilov/kartoon-fool';
+    // PAGE 1 - Project 1: Periodic Table
+    title_1.innerText = 'Periodic Table';
+    thumbnail_1.style.backgroundImage = "url('../img/thumbnails/periodic-table.png')";
+    link_1.href = 'https://kaloyan-kirilov.github.io/periodic-table/';
+    code_1.href = 'https://github.com/kaloyan-kirilov/periodic-table';
     link_1.target = '_blank';
     code_1.target = '_blank';
 
@@ -143,20 +143,62 @@ function modalPage_2() {
         link_3.target = '_blank';
         code_3.target = '_blank';
     
-        // PAGE 2 - Project 8: null
-        title_4.innerText = 'null :P';
-        thumbnail_4.style.backgroundImage = null;
-        link_4.href = 'javascript:void(0);';
-        code_4.href = 'javascript:void(0);';      
-        link_4.target = '_self';
-        code_4.target = '_self';
+        // PAGE 2 - Project 8: Kartoon Fool
+        title_4.innerText = 'Kartoon Fool';
+        thumbnail_4.style.backgroundImage = "url('../img/thumbnails/kartoon-fool.png')";
+        link_4.href = 'https://kartoon-fool.netlify.app';
+        code_4.href = 'https://github.com/kaloyan-kirilov/kartoon-fool';
+        link_4.target = '_blank';
+        code_4.target = '_blank';
     
         prevBtn.classList.remove('inactive-btn');
         prevBtn.onclick = modalPage_1;
 
         pageNum.innerText = '2';
     
-        nextBtn.classList.add('inactive-btn');
+        nextBtn.classList.remove('inactive-btn');
+        nextBtn.onclick = modalPage_3;
+}
+
+function modalPage_3() {
+    // PAGE 3 - Project 9: null
+    title_1.innerText = 'null :P';
+    thumbnail_1.style.backgroundImage = null;
+    link_1.href = 'javascript:void(0);';
+    code_1.href = 'javascript:void(0);';
+    link_1.target = '_self';
+    code_1.target = '_self';
+
+    // PAGE 3 - Project 10: null
+    title_2.innerText = 'null :P';
+    thumbnail_2.style.backgroundImage = null;
+    link_2.href = 'javascript:void(0);';
+    code_2.href = 'javascript:void(0);';
+    link_2.target = '_self';
+    code_2.target = '_self';
+
+    // PAGE 3 - Project 11: null
+    title_3.innerText = 'null :P';
+    thumbnail_3.style.backgroundImage = null;
+    link_3.href = 'javascript:void(0);';
+    code_3.href = 'javascript:void(0);';
+    link_3.target = '_self';
+    code_3.target = '_self';
+
+    // PAGE 3 - Project 12: null
+    title_4.innerText = 'null :P';
+    thumbnail_4.style.backgroundImage = null;
+    link_4.href = 'javascript:void(0);';
+    code_4.href = 'javascript:void(0);';
+    link_4.target = '_self';
+    code_4.target = '_self';
+
+    prevBtn.classList.remove('inactive-btn');
+    prevBtn.onclick = modalPage_2;
+
+    pageNum.innerText = '3';
+
+    nextBtn.classList.add('inactive-btn');
 }
 
 // Contact modal
