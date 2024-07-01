@@ -610,13 +610,14 @@ textarea:focus::placeholder {
                 url('../img/logos/github-logo-hover.svg'),
                 url('../img/logos/linkedin-logo-hover.svg'),
                 url('../img/logos/twitter-logo-hover.svg'),
-                url('../img/thumbnails/kartoon-fool.png'),
+                url('../img/thumbnails/periodic-table.png'),
                 url('../img/thumbnails/kal-3000.png'),
                 url('../img/thumbnails/card-game.png'),
                 url('../img/thumbnails/weather-app.png'),
                 url('../img/thumbnails/react-quotepad.png'),
                 url('../img/thumbnails/chat-app.png'),
                 url('../img/thumbnails/los-angeles.png'),
+                url('../img/thumbnails/kartoon-fool.png'),
                 url('../img/tick-icon.svg');
 }
 
